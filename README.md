@@ -65,18 +65,18 @@ pom.xml
 
 ## ⚙️ Setup Instructions
 
-1️⃣ Clone the Repository
+-1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
 
-##2️⃣ Import into IDE
+-2️⃣ Import into IDE
 Open Spring Tool Suite (STS) or IntelliJ IDEA.
 
 Go to File → Import → Maven → Existing Maven Projects.
 
 Select the cloned project folder and finish importing.
 
-##3️⃣ Configure Database
+-3️⃣ Configure Database
 Install and run PostgreSQL.
 
 Create a database:
