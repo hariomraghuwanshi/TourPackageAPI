@@ -15,6 +15,19 @@ It supports **CRUD operations** and additional methods to get a Tour Package by 
 - Built with **Spring Boot**
 - REST endpoints tested using **Postman**
 
+
+---
+
+
+| Method     | Endpoint          | Description             | Sample Request Body                                                                                                                                                            |
+| ---------- | ----------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **POST**   | `/api/tours`      | Create new tour package | `json { "image": "https://images.unsplash.com/photo-123456", "title": "Goa Trip", "description": "Beach tour", "price": 5000, "discountInPercentage": "10%" }`                 |
+| **GET**    | `/api/tours`      | Get all tour packages   | —                                                                                                                                                                              |
+| **GET**    | `/api/tours/{id}` | Get package by ID       | —                                                                                                                                                                              |
+| **PUT**    | `/api/tours/{id}` | Update package by ID    | `json { "image": "https://images.unsplash.com/photo-654321", "title": "Updated Goa Trip", "description": "Updated beach tour", "price": 5500, "discountInPercentage": "15%" }` |
+| **DELETE** | `/api/tours/{id}` | Delete package by ID    | —                                                                                                                                                                              |
+
+
 ---
 
 ## 🛠️ Technologies Used
@@ -49,14 +62,15 @@ Edit
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
-2️⃣ Import into IDE
+
+###2️⃣ Import into IDE
 Open Spring Tool Suite (STS) or IntelliJ IDEA.
 
 Go to File → Import → Maven → Existing Maven Projects.
 
 Select the cloned project folder and finish importing.
 
-3️⃣ Configure Database
+###3️⃣ Configure Database
 Install and run PostgreSQL.
 
 Create a database:
@@ -75,14 +89,16 @@ spring.datasource.username=YOUR_DB_USERNAME
 spring.datasource.password=YOUR_DB_PASSWORD
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-4️⃣ Run the Application
+
+
+###4️⃣ Run the Application
 bash
 Copy
 Edit
 mvn spring-boot:run
 or run directly from STS by right-clicking the project → Run As → Spring Boot App.
 
-5️⃣ Test Endpoints in Postman
+###5️⃣ Test Endpoints in Postman
 Method	Endpoint	Description
 POST	/api/tours	Create a tour
 GET	/api/tours	Get all tours
@@ -90,7 +106,7 @@ GET	/api/tours/{id}	Get tour by ID
 PUT	/api/tours/{id}	Update tour by ID
 DELETE	/api/tours/{id}	Delete tour by ID
 
-📌 Extra Notes
+###📌 Extra Notes
 This project contains two extra methods:
 
 Update by ID (PUT /api/tours/{id})
@@ -101,7 +117,7 @@ You can customize database credentials in application.properties.
 
 Make sure PostgreSQL service is running before starting the app.
 
-📜 License
+###📜 License
 This project is open-source and free to use for learning purposes.
 
 yaml
