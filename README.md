@@ -58,9 +58,7 @@ src/
 └── test/ (JUnit tests)
 pom.xml
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -82,15 +80,11 @@ Install and run PostgreSQL.
 
 Create a database:
 
-sql
-Copy
-Edit
 CREATE DATABASE tourdb;
 Update the application.properties file:
 
 properties
-Copy
-Edit
+
 spring.datasource.url=jdbc:postgresql://localhost:5432/tourdb
 spring.datasource.username=YOUR_DB_USERNAME
 spring.datasource.password=YOUR_DB_PASSWORD
@@ -99,9 +93,7 @@ spring.jpa.show-sql=true
 
 
 ###4️⃣ Run the Application
-bash
-Copy
-Edit
+
 mvn spring-boot:run
 or run directly from STS by right-clicking the project → Run As → Spring Boot App.
 
@@ -127,9 +119,7 @@ Make sure PostgreSQL service is running before starting the app.
 ###📜 License
 This project is open-source and free to use for learning purposes.
 
-yaml
-Copy
-Edit
+
 
 ---
 
