@@ -67,7 +67,7 @@ pom.xml
 
 -1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
+git clone https://github.com/hariomraghuwanshi/TourPackageAPI.git
 
 
 
@@ -110,6 +110,8 @@ Method	Endpoint	Description
 POST	/api/tours	Create a tour
 GET	/api/tours	Get all tours
 GET	/api/tours/{id}	Get tour by ID
+
+EXTRA:-
 PUT	/api/tours/{id}	Update tour by ID
 DELETE	/api/tours/{id}	Delete tour by ID
 
