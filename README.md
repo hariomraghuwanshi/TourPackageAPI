@@ -65,7 +65,7 @@ pom.xml
 
 ## ⚙️ Setup Instructions
 
-##1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
 
