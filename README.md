@@ -19,13 +19,14 @@ It supports **CRUD operations** and additional methods to get a Tour Package by 
 ---
 
 
-| Method     | Endpoint          | Description             | Sample Request Body                                                                                                                                                            |
-| ---------- | ----------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **POST**   | `/api/tours`      | Create new tour package | `json { "image": "https://images.unsplash.com/photo-123456", "title": "Goa Trip", "description": "Beach tour", "price": 5000, "discountInPercentage": "10%" }`                 |
-| **GET**    | `/api/tours`      | Get all tour packages   | —                                                                                                                                                                              |
-| **GET**    | `/api/tours/{id}` | Get package by ID       | —                                                                                                                                                                              |
-| **PUT**    | `/api/tours/{id}` | Update package by ID    | `json { "image": "https://images.unsplash.com/photo-654321", "title": "Updated Goa Trip", "description": "Updated beach tour", "price": 5500, "discountInPercentage": "15%" }` |
-| **DELETE** | `/api/tours/{id}` | Delete package by ID    | —                                                                                                                                                                              |
+###📍 API Endpoints & Postman Testing
+| Method     | Endpoint          | Description             | Headers                          | Body (if required)                                                                                                                                                                                 |
+| ---------- | ----------------- | ----------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **POST**   | `/api/tours`      | Create new tour package | `Content-Type: application/json` | **raw → JSON**: <br>`json { "image": "https://images.unsplash.com/photo-123456", "title": "Goa Trip", "description": "Beach tour", "price": 5000, "discountInPercentage": "10%" }`                 |
+| **GET**    | `/api/tours`      | Get all tour packages   | None                             | None                                                                                                                                                                                               |
+| **GET**    | `/api/tours/{id}` | Get package by ID       | None                             | None                                                                                                                                                                                               |
+| **PUT**    | `/api/tours/{id}` | Update package by ID    | `Content-Type: application/json` | **raw → JSON**: <br>`json { "image": "https://images.unsplash.com/photo-654321", "title": "Updated Goa Trip", "description": "Updated beach tour", "price": 5500, "discountInPercentage": "15%" }` |
+| **DELETE** | `/api/tours/{id}` | Delete package by ID    | None                             | None                                                                                                                                                                                               |
 
 
 ---
