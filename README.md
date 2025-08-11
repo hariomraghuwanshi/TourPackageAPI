@@ -42,22 +42,21 @@ It supports **CRUD operations** and additional methods to get a Tour Package by 
 ---
 
 ## 📂 Project Structure
-src/
-
-├── main/
-
-│ ├── java/ (Java source files)
-
-│ ├── resources/
-
-│ ├── application.properties (DB config)
-
-│ ├── static/ (if any frontend files)
-
-│ ├── templates/ (if any HTML files)
-
-└── test/ (JUnit tests)
-pom.xml
+tour-api/
+│
+├── src/main/java/com/example/tourapi
+│ ├── controller/ # REST Controllers
+│ ├── entity/ # JPA Entities
+│ ├── exception/ # Custom Exceptions
+│ ├── repository/ # Spring Data JPA Repositories
+│ ├── service/ # Service Layer
+│ └── TourApiApplication.java
+│
+├── src/main/resources
+│ ├── application.properties # DB & server config
+│
+└── pom.xml
+ README.md
 
 
 
